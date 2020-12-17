@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="@color/primarycolors"
+    >
+    <ImageView
+        android:id="@+id/imageOfOneOrder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/pizza"
+        >
+    </ImageView>
+    <TextView
+        app:layout_constraintBottom_toTopOf="@+id/priceOfOrder"
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:id="@+id/nameOfOrder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold|italic"
+        android:textSize="13sp"
+
+        >
+    </TextView>
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/nameOfOrder"
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:id="@+id/priceOfOrder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold|italic"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/showMoredetailsBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/placeOrderBtn"
+        app:layout_constraintRight_toLeftOf="@+id/imageOfOneOrder"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/details"
+
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/placeOrderBtn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imageOfOneOrder"
+        app:layout_constraintTop_toBottomOf="@+id/showMoredetailsBtn"
+        android:text="@string/order"
+        >
+
+    </Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

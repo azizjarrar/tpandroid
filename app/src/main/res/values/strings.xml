@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PizzaBena</string>
+    <string name="pizzabena">PizzaBena</string>
+    <string name="telephoneHint">Telephone</string>
+    <string name="passwordHint">Password</string>
+    <string name="details">details</string>
+    <string name="order">Order</string>
+    <string name="go_back">Go Back</string>
+    <string name="idShredRef">idShredRef</string>
+    <string name="IS_CONNECTED">IS_CONNECTED</string>
+</resources>
